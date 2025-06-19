@@ -129,11 +129,11 @@ impl Simulator {
             println!("now write finish his job.")
         }
         // Reset the write queues after ticking
-        if !self.MemUser_57a15_rdata.push.is_empty() &&    
-        !self.MemUser_57a15_rdata.pop.is_empty() {
+        // if !self.MemUser_57a15_rdata.push.is_empty() &&    
+        // !self.MemUser_57a15_rdata.pop.is_empty() {
             //println!("looks like u never reach here");
          self.MemUser_57a15_rdata.tick(self.stamp);
-     }
+    // }
     }
 
     // simulate the memory user, 

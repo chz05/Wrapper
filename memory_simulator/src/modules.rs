@@ -53,6 +53,10 @@ pub fn MemUser_57a15(sim: &mut Simulator) -> bool {
         cyclize(sim.stamp)
     );
     println!("{} + {} = {}", _2a915, 128i32, _2a921);
+    if _2a915 == 15 || _2a915 == 13 {
+        // 15 + 128 appears twice, we need to know why.
+        sim.print_rdata_state();
+    }
 
     true
 }
